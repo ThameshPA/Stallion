@@ -1,0 +1,160 @@
+body {
+    font-family: Helvetica;
+    margin: 0;
+    background-color: #ccc;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.site-header {
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+.site-header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.site-identity {
+    float: left;
+}
+
+.site-identity h1 {
+    font-size: 1.5em;
+    margin: .7em 0 .3em 0;
+    display: inline-block;
+}
+
+.site-identity img {
+    max-width: 55px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.site-navigation {
+    float: right;
+}
+
+.site-navigation ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+}
+
+.postbody {
+    padding-left: 20%;
+    padding-right: 4%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.envatohead {
+    padding-top: 20px;
+    color: black;
+}
+
+.envato {
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.808);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.envatohead:hover {
+    color: black;
+    text-shadow: 1px 1px 2px rgba(255, 5, 5, 0.26), 0 0 15px rgb(255, 255, 255), 0 0 5px rgb(221, 221, 221);
+}
+
+.envatoimg {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    resize: vertical;
+    border: 1px solid skyblue;
+}
+
+.envatoimg:hover {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26), 0 0 15px rgb(255, 255, 255), 0 0 5px rgb(90, 90, 90);
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.445);
+    color: white;
+}
+
+.logofooter {
+    filter: brightness(0) invert(1);
+    width: 5%;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #1ec2f4;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 100%;
+    padding: 2%;
+    width: 40%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-bottom: 4%;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.postbodyenvato {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0% 15%;
+    text-align: left;
+}
+
+@media(max-width:900px) {
+    .envato {
+        width: 90%;
+    }
+    .sidebar {
+        display: none;
+    }
+}
